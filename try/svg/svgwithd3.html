@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>membuat sebuah element svg dengan d3.js</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+</head>
+<body>
+so i will let you create my svg, to d3.js please welcome and create rectangular shape
+<br>
+<script type="text/javascript">
+	//kita membuat sebuah element dengan append dan attr
+	var svgContainer = d3.select("body").append("svg")
+	.attr("width",200)
+	.attr("height",200);
+	//kemudian kita membuat sebuah kotak
+	var kotak = svgContainer.append("rect")
+	.attr("x",5)
+	.attr("y",10)
+	.attr("width",50)
+	.attr("height",150);
+</script>
+</body>
+</html>
